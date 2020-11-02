@@ -1,0 +1,2 @@
+# Airbnb-High-Booking-Rate-Prediction
+Airbnb, Inc. is an american vacation rental online marketplace company based in San Francisco, California, United States. Airbnb offers arrangement for lodging, primarily homestays, or tourism experiences. The company does not own any of the real estate listings, nor does it host events; it acts as a broker, receiving commissions from each booking. In this project we are trying to predict whether a listing would receive high booking or not. 
