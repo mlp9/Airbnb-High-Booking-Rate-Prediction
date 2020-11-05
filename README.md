@@ -26,3 +26,9 @@ homes while enjoying some privacy in contrast to shared rooms.
 One thing to notice is that both private rooms and shared rooms have a few data points over the
 $200 range. It could be several mis entries or some truly expensive places worth checking out if
 Curious.
+
+## Feature Engineering
+List of features used in model
+accommodates, availability_30, availability_365, availability_60, availability_90, bathrooms, bedrooms, beds, cleaning_fee, extra_people, first_review, guests_included, host_listings_count, host_response_rate, host_since, latitude, longitude, maximum_nights, minimum_nights, price, security_deposit
+Generally, on the basis of not overfitting, we believe that the more information to include into the model, the more accuracy we may generate. Following this logic, we included almost every column, except for prohibitively difficult ones such as ‘host_name’, ‘Neighbourhood’, ’space’, ‘Market’ etc. In the case where a variable is not suitable for better model performance, we would check the result of importance analysis and exclude features accordingly. As a result, much of our effort in feature engineering was to make use of complex variables. These variables either have too many categories for R to process, or they contain text messages that need further processing. We will list new variables created with a short introduction below.
+
