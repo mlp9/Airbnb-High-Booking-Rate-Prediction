@@ -33,3 +33,15 @@ accommodates, availability_30, availability_365, availability_60, availability_9
 
 Generally, on the basis of not overfitting, we believe that the more information to include into the model, the more accuracy we may generate. Following this logic, we included almost every column, except for prohibitively difficult ones such as ‘host_name’, ‘Neighbourhood’, ’space’, ‘Market’ etc. In the case where a variable is not suitable for better model performance, we would check the result of importance analysis and exclude features accordingly. As a result, much of our effort in feature engineering was to make use of complex variables. These variables either have too many categories for R to process, or they contain text messages that need further processing. We will list new variables created with a short introduction below.
 
+## Explanation and list of new variables created
+number of amenities and distinctive amenities: num_of_amenities, TV, Wifi, AC, Parking, Laundry, Bathtub, Pet, Kitchen
+sentiment analysis of ‘name’ and ‘summary’: name_compound, name_negativity, name_neutrality, name_positivity,desc_compound, desc_negativity, desc_neutrality, desc_positivity
+record the time difference between opening and the first review: diff.time.review
+bathroom per bedroom: bath_per_bedroom
+top 30 travel cities as dummy variables: top_travel_city_i (0 <= i <= 5)
+availability of monthly or weekly prices: is_monthly_f, is_monthly_t, is_weekly_f, is_weekly_t
+whether host shares neighborhood with the house: neighbourhood_same_0, neighbourhood_same_1, neighbourhood_same_unkown
+interactive variables of ‘room_type’ and ‘price’, ‘minimum_nights’ and ‘price’: room_type_Entire_price, room_type_Private_price, room_type_Shared_price, minimum_price
+More dummy variables created for: ‘city_name’, ‘host_has_profile_pic’, ‘bed_type’, ‘cancellation_policy’, ‘host_reponse_time’, ‘instant_bookable’, ‘is_business_travel_ready’, ‘is_location_exact’, ‘property_type’, ‘require_guest_phone_verification’, ‘require_guest_profile_picture’, ‘requires_license’, ‘room_type’, ‘state’
+
+
