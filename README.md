@@ -58,5 +58,13 @@ As we can tell from the results, the accuracies for different host types are ver
 After combining the results, we can directly compare model performances(table 2). We have the best accuracy with XGboost without separation of host type, which is our final choice of model.
 After each time of modeling, the importance analysis always generates similar results that ‘host_response_time’ is the most important feature, which is surprising because price doesn’t seem to be a key factor. Among top important features(Figure 8), most of the important ones are operation-related factors or city-related. Which is to say, in order to achieve a high booking rate, being a good host in a good city is significantly more important than having a nice house and offering a good deal.
 
+## Business Value
+1)	Initial Acquisition: Using our model, we can predict an airbnb residence’s future operation in terms of popularity. An investor would apply the model on different properties to find out the most promising one. It would work better if the potential owner has a business plan in mind. If not, simply input average numbers in operation-related variables, and check for the predicted ‘high_booking_rate’ under the circumstance that a property is operated on an average level. 
+
+2)	Optimum Pricing: After buying or investing in a property, our model can be used to determine the ideal pricing for that property. Pricing consists of minimum price, cleaning fee and the actual tag price. Holding other things constant, an owner can try out different levels or combinations of pricing and find out the most desirable one on the basis that the property stays or gets in the high-booking category.
+
+3)	Management: In order to achieve a high booking rate, a decent level of management is needed, which requires experience, which takes time and costs money. However, one can spare the time and effort in accumulating experience by simply applying our prediction model, which tells the owner ahead of time if his/her way of operation would be successful. In the case of an expansion, one can stop worrying about whether he/she would fail due to a lack of operation experiences in different properties. The model is precise, adaptive and flexible compared to traditional ways of business. It saves you the cost of creating SOP(Standard Operating Procedure) and saves the risk that single management style may not apply to different markets, cities or segments. All in all, within seconds, the model offers one of the most valuable assets in running a business --experience. 
+
+
 
 
